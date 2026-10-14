@@ -42,11 +42,11 @@ services:
 
   # ==============================================================
   # 3. React Frontend Dashboard (Static Site)
+  # Note: Static sites on Render are always free and do not accept a 'plan' property
   # ==============================================================
   - type: web
     name: student-course-frontend
     runtime: static
-    plan: free
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: dist
